@@ -1,0 +1,29 @@
+
+    let videos = res.videos.slice(0, 5);
+
+    let resp = "";
+
+    for (var i in videos) {
+      resp += `**${parseInt(i) + 1}:** \**[${videos[i].title}](https://www.youtube.com${videos[i].url})\** (${videos[i].timestamp})\n`;
+    }
+    const embed = new ops.Discord.MessageEmbed()
+      .setColor("#0099ff")
+      .setTitle(`Seleccion de canciones.Escribe el numero que precede al numero de la cancion`)
+      .setURL()
+      .setThumbnail("https://cdn.discordapp.com/emojis/580900099111125022.gif?v=1")
+      .setDescription(resp)
+      .setFooter(`\nEsta operación expira en 60 Segundos. Escribe cancel para cancelar la operación.`);
+    message.channel.send(embed).then(m => {
+      if(m.deletable) m.delete(60000)
+    });
+    
+    const filter = m => !isNaN(m.content) && m.content < videos.length + 1 && m.content > 0 && m.author.id == message.author.id || m.content === 'cancel'; 
+    const collector = message.channel.createMessageCollector(filter, {
+      time: 60000
+      });
+    collector.videos = videos;
+    collector.once("collect", function(m) {
+    if(message.content === 'cancel') return message.channel.send("Has cancelado la operacion con exito!");
+})
+  
+ });
