@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg color-web shadow-lg navbar-right">
+   <a class="navbar-brand" href="/">
+      <img class="floating responsive-img circle" src="https://cdn.discordapp.com/avatars/623489878591537181/1f5ec0af49df648a4d128b6e42b85af8.webp?size=2048" 
+      width="70" height="70" style="border: 10px; border-radius: 150px; ">
+    </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav font-weight-bolder mover-right">
+  <li class="nav-item"><a class="nav-links" target="_blank" href="https://invite.gg/bahiano" >Support Server</a></li>
+<% if(login === 'si') { %>
+  <li class="nav-item dropdown">
+  <a class="nav-links dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">        
+<% if(user.avatar) { %>
+    <img class="circle responsive-img" src="https://cdn.discordapp.com/avatars/<%=user.id%>/<%=user.avatar%>.png" width="25" height="25" style="border: 10px; border-radius: 150px;" alt="<%=user.name%>">
+<% } else { %> 
+    <img class="circle responsive-img" src="https://discordapp.com/assets/6debd47ed13483642cf09e832ed0bc1b.png?width=231&height=231" width="25" height="25" alt="<%= user.name%>">
+<% } %><%= textLogin %>
+    </a>
+<div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+  <a class="dropdown-item" href="/logout">Salir</a>
+  </div>
+</li>
+<% } else { %>
+  <li class="nav-item">
+  <a class="nav-links" href="/api/login">Login</a>
+    </li>
+<% } %>
+    </ul>
+  </div>
+</nav>

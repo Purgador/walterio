@@ -1,0 +1,42 @@
+<html lang="es">
+  <head>
+<script data-ad-client="ca-pub-4110975912924799" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<%- include('_head.ejs'); %>
+  </head>
+  
+  <body class="body-index">
+<%- include('header.ejs'); %>
+   
+    <center>
+    <div class="container-fluid">
+      <section class="body-header">
+        <div>
+<h1><b>Walterio</b></h1><br>
+        </div>
+        
+        <div class="title-index">
+          <p>
+          Plataforma de listado de proyectos para usuarios de discord, donde podras compartir tus mejores proyectos
+          desarrollados.
+           </p>
+          <div>
+            <a class=" btn btn-discord-white btn-lg"  href="<%= login === 'si' ? '/dashboard' : '/api/login' %>" role="button" style="font-size:150%;"><i class="fab fa-discord" style="font-size:110%;"></i><b>  <%=textDash%></b></a>
+            <a class="btn btn-success btn-lg" href="#features" role="button" style="font-size:160%;"><b>See Features</b></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div>
+      <br>
+      <p>
+        Sponsor:
+        </p>
+        <a href="https://panel.d3v-srv.net/">
+      <img src="https://cdn.discordapp.com/attachments/688548189816619051/688580251357675575/d3v-host.png" alt="Sponsor"  height="40px">
+      </a>  
+      </div>
+      </footer>
+    </center>
+  </body>
+      </html>
