@@ -1,0 +1,61 @@
+{
+  "498164647833239563": {
+    "channels": {
+      "logs": "605120703607341076",
+      "welcome": "498164647833239565"
+    },
+    "fondo": {
+      "welcome": "https://i.imgur.com/rAfy0Fj.jpg"
+    },
+    "prefix": "$",
+    "lenguage": "es",
+    "role": "578371585673658379"
+  },
+  "643928298027745330": {
+    "prefix": "$",
+    "channels": {
+      "logs": "645338125312458788",
+      "welcome": "645338125312458788",
+      "goodbye": "645338125312458788"
+    },
+    "lenguage": "es",
+    "role": "645337915555184723",
+    "channel": {}
+  },
+  "532602316570886158": {
+    "channels": {
+      "logs": "659963188317650954"
+    }
+  },
+  "689506316997230848": {
+    "prefix": "$",
+    "role": "689515983206875218",
+    "channels": {
+      "goodbye": "689515510693626019",
+      "welcome": "689515510693626019"
+    }
+  },
+  "671082839281762344": {
+    "prefix": "w!",
+    "channel": {
+      "welcome": "727368936248836156",
+      "goodbye": "727368936248836156"
+    },
+    "lenguage": "es",
+    "fondo": {
+      "welcome": "https://images.app.goo.gl/EKW919RqHCbBVUU96",
+      "goodbye": "https://images.app.goo.gl/VtTVRppKJYicbB2G8"
+    }
+  },
+  "688923902168137738": {
+    "channel": {
+      "logs": "706830031917154314",
+      "welcome": "688930724765892623",
+      "goodbye": "688930724765892623"
+    },
+    "fondo": {
+      "welcome": "https://i.imgur.com/oiAu1rW.png",
+      "goodbye": "https://i.imgur.com/oiAu1rW.png"
+    }
+  }
+}
